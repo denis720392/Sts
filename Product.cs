@@ -1,4 +1,6 @@
 ﻿
+using WorkingWithProducts.Interfaces;
+
 namespace WorkingWithProducts
 {
     abstract internal class Product : IProduct

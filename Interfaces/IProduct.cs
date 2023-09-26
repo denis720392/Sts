@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WorkingWithProducts
+namespace WorkingWithProducts.Interfaces
 {
     internal interface IProduct
     {
-        public Guid Guid { get;}
+        public Guid Guid { get; }
         public string getInfo();
     }
 }
