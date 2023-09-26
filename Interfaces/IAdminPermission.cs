@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace WorkingWithProducts.Interfaces
 {
-    internal interface IProduct
+    internal interface IAdminPermission
     {
-        public Guid Guid { get; }
-        public string getInfo();
+        public void AddCategoryProduct();
+        public void DeleteCategoryProduct();
+        public void EditCategoryProduct();
     }
 }

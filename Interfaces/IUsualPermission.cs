@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace WorkingWithProducts.Interfaces
 {
-    internal interface IReader
+    internal interface IUsualPermission
     {
-        public string ReadAllText();
+        public void AddProduct();
+        public void DeleteProduct();
+        public void EditProduct();
     }
 }

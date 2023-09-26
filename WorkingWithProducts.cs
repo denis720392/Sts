@@ -1,4 +1,5 @@
-﻿using System.Threading.Channels;
+﻿using System.Reflection.Metadata;
+using System.Threading.Channels;
 using System.Xml.Linq;
 using WorkingWithProducts.Interfaces;
 
@@ -8,8 +9,11 @@ namespace WorkingWithProducts
     {
         static void Main(string[] args)
         {
-            ProductVault vault = new ProductVault();
-            vault.GetProducts();
+            Admin admin = new Admin();
+            User user = new User();
+            admin.AddProduct();
+            user.AddProduct();
+            admin.AddCategoryProduct();
         }
     }
 }

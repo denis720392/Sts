@@ -7,11 +7,7 @@ using WorkingWithProducts.Interfaces;
 
 namespace WorkingWithProducts
 {
-    internal class Management
+    internal class User : ManagingProducts, IUsualPermission
     {
-        public void ReadText(IReader reader)
-        {
-            Console.WriteLine(reader.ReadAllText());
-        }
     }
 }
