@@ -9,34 +9,21 @@ namespace WorkingWithProducts
 {
     abstract class ManagingProducts
     {
-        virtual public void AddProduct()
+        virtual public void AddProduct(IWriter writer)
         {
-            Console.WriteLine(GetType().Name + " " + "Добавил продукт");
+            Console.WriteLine(GetType().Name + " добавил продукт");
+            writer.Write();
         }
 
-        virtual public void DeleteProduct()
+        virtual public void DeleteProduct(IReader reader)
         {
-            Console.WriteLine(GetType().Name + " " + "Удалил продукт");
+            Console.WriteLine(GetType().Name + " удалил продукт");
+            reader.Read();
         }
 
         virtual public void EditProduct()
         {
-            Console.WriteLine(GetType().Name + " " + "Изменил продукт");
-        }
-
-        virtual public void AddCategoryProduct()
-        {
-            Console.WriteLine(GetType().Name + " " + "Добавил категорию продукта");
-        }
-
-        virtual public void DeleteCategoryProduct()
-        {
-            Console.WriteLine(GetType().Name + " " + "Удалил категорию продукта");
-        }
-
-        virtual public void EditCategoryProduct()
-        {
-            Console.WriteLine(GetType().Name + " " + "Изменил категорию продукта");
+            Console.WriteLine(GetType().Name + " изменил продукт");
         }
     }
 }

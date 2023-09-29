@@ -8,8 +8,8 @@ namespace WorkingWithProducts.Interfaces
 {
     internal interface IAdminPermission
     {
-        public void AddCategoryProduct();
-        public void DeleteCategoryProduct();
+        public void AddCategoryProduct(IWriter writer);
+        public void DeleteCategoryProduct(IReader reader);
         public void EditCategoryProduct();
     }
 }
