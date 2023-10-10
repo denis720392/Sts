@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WorkingWithProducts.Interfaces;
+﻿
+using Sts.Product.Common.Interfaces;
+using Sts.Product.Common.Utilities;
 
-namespace WorkingWithProducts
+namespace Sts.Product.User
 {
     internal class User : ManagingProducts, IUsualPermission
     {

@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Files\" />
+    <ProjectReference Include="..\Product.Common\Product.Common.csproj" />
   </ItemGroup>
 
 </Project>
